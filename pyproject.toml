@@ -1,0 +1,16 @@
+[project]
+name = "macpilot"
+version = "1.1.0"
+description = "Universal macOS Helper Tool (CLI + GUI)"
+authors = [{ name="macpilot contributors" }]
+readme = "README.md"
+requires-python = ">=3.8"
+
+dependencies = [
+  "click",
+  "rich",
+  "rumps"
+]
+
+[project.scripts]
+macpilot = "macpilot:cli"
