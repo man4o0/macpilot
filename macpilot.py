@@ -2,11 +2,12 @@
 
 import click
 from rich.console import Console
-from commands import clean_system
+from commands.clean import clean_system
 from commands.battery import battery_status
 from commands.doctor import system_doctor
 from commands.privacy import privacy_scan
-from commands import permission_audit
+from commands.audit import permission_audit
+from commands.optimize import optimize_system
 
 
 console = Console()
@@ -46,6 +47,12 @@ def privacy():
 def audit():
     """🔍 Audit macOS app permissions (Camera/Mic/Disk)"""
     permission_audit()
+
+@cli.command()
+def optimize():
+    """⚡ Show macOS performance optimization report"""
+    optimize_system()
+
 
 @cli.command()
 def gui():
