@@ -1,9 +1,3 @@
-
----
-
-# ✅ 2. install.sh
-
-```bash
 #!/bin/bash
 
 echo "🍎 Installing macpilot..."
